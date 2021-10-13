@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+<!--start content for metadescription -->
+{% block metadescription %}
+        {{product.description|truncatewords:150}}
+
+{% endblock metadescription %}
+<!--end content for metadescription -->
+<!-- start content for title -->
+{% block title %}
+        {{product.product_name}}-AJS world
+{% endblock title %}
+<!-- end content for title -->
+<!-- start content for main block -->
+
+{% block content %}
+<div class="row my_product_row">
+    <div class="mx_auto">
+        <p><a href="{% url 'shop:all_product_category' %}">Home</a> | <a href="{{product.category.get_url}}">{{product.category}}</a> | {{product.product_name}}</p>
+
+    </div>
+</div>
+<div class="container">
+    <br>
+    <div class="row ">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 text-center">
+            <div style="min-width: 18rem;">
+                <img src="{{product.image.url}}" alt="{{product.product_name}}" height="400px">
+            </div>
+        </div>
+    
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 ">
+            <div>
+                <h1 class="my_product_title">{{product.product_name}}</h1>
+                <p >₹ {{product.price}}</p>
+                <p class="my-title"><b>Product Description</b></p>
+                <p class="text-justify my_product_text">{{product.description}}</p>
+                {% if product.stock <= 0 %}
+                <p class="text-justify my_product_text"><b>Out Of Stock</b></p>
+                {% else %}
+                <a class="btn btn-secondary" href="{% url 'cart:add_cart' product.id %}">Add to Cart</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+<!-- start content for main block -->

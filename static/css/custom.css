@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+.nav-item,
+.dropdown-item {
+  letter-spacing: 0.2em;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-style: italic;
+}
+.my-footer {
+  background-color: #f8f9fa;
+  height: 60px;
+}
+.my-footer p {
+  padding-top: 20px;
+  font-size: 14px;
+}
+.row_product_collection {
+  padding-top: 15px;
+}
+.row_product_collection a {
+  font-size: 12px;
+  color: #000;
+  text-decoration: none;
+}
+.text-justify {
+  text-align: justify;
+  text-justify: inter-word;
+}
+.banner-bg {
+  align-items: center;
+  background: rgb(68, 105, 247);
+  background: linear-gradient(
+    238deg,
+    rgba(68, 105, 247, 1) 0%,
+    rgba(246, 91, 245, 1) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+.my-title {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-style: italic;
+}
+.card-img {
+  width: 100% !important;
+  height: 200px !important;
+  object-fit: cover;
+}
+.card-body h4 {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+.active_pg {
+  color: red !important;
+}
+/* PRODUCT */
+
+.my_product_row {
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+.my_product_row .mx_auto {
+  color: #000;
+  font-size: 12px;
+  text-decoration: none;
+}
+.my_product_title {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+.my_product_text {
+  padding-right: 20px;
+}
+/* END PRODUCT */
+
+/* CART */
+.my-custom-table {
+  min-width: 400px;
+  font-size: 14px;
+}
+.my-custom-thead {
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  background-color: #f8f8fa !important;
+}
+.custom_a {
+  text-decoration: none;
+}
+.custom_icon {
+  text-decoration: none;
+  color: #868e96 !important;
+}
+.my-custom-button {
+  margin-top: 5px;
+}
